@@ -2,14 +2,13 @@
 
 ## Joy of React, Project II
 
-In this project, we'll dive deep into the implementation of a single common UI component: A `<Toast>` message component.
+In this project, we'll dive deep into the implementation of a single common UI component: A `<Toast>` message component.Look at the [live version](https://toast-project-mine.vercel.app/).
 
 ![Screen recording showing 3 toast messages popping up from user input](./docs/toast-demo.gif)
 
 ## The challenge
 
 The challenge is to build out resuable toast component and get it working as per requirement.
-
 
 ## Getting Started
 
