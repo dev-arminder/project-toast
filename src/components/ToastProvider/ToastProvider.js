@@ -4,6 +4,20 @@ import { ToastContext } from '../Contexts'
 function ToastProvider({children}) {
   const [toastStack, setToastStack] = React.useState([]);
 
+  React.useEffect(() => {
+    function handleKeyDown(e){
+      let code = e.code;
+      if(code == 'Escape'){
+        setToastStack([]);
+      }
+    }
+
+    window.addEventListener("keydown", handleKeyDown)
+    return () => {
+      return window.removeEventListener("keydown", handleKeyDown);
+    }
+  }, [])
+
   function addToast(toastMessage, selectedVariant){
     const newToastStack = [...toastStack];
     newToastStack.push({
