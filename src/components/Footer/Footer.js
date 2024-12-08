@@ -12,7 +12,6 @@ function Footer() {
         </a>
         , a comprehensive React.js course.
       </p>
-      <p>© 2022-present Joshua Comeau. All rights reserved.</p>
     </footer>
   );
 }
