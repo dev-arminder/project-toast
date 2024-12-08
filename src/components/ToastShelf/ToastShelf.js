@@ -7,7 +7,6 @@ function ToastShelf() {
 
   const { toastStack, dismissToastById } = React.useContext(ToastContext)
 
-  console.log('Toast Shelf Rendered')
   return (
     toastStack.length > 0 && (<ol className={styles.wrapper}>
       {toastStack.map(({ id, message, variant }) => (<li className={styles.toastWrapper} key={id}>
